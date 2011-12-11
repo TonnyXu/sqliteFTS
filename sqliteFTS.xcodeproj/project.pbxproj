@@ -1,0 +1,233 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEFDFE2514948AE50030D63F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFDFE2414948AE50030D63F /* Foundation.framework */; };
+		CEFDFE2B14948AE60030D63F /* sqliteFTS.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFE2A14948AE60030D63F /* sqliteFTS.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CEFDFE2114948AE50030D63F /* libsqliteFTS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsqliteFTS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEFDFE2414948AE50030D63F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEFDFE2814948AE50030D63F /* sqliteFTS-Prefix.pch */ = {isa = PBXFileReference; path = "sqliteFTS-Prefix.pch"; sourceTree = "<group>"; };
+		CEFDFE2914948AE50030D63F /* sqliteFTS.h */ = {isa = PBXFileReference; path = sqliteFTS.h; sourceTree = "<group>"; };
+		CEFDFE2A14948AE60030D63F /* sqliteFTS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sqliteFTS.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEFDFE1E14948AE50030D63F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFDFE2514948AE50030D63F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEFDFE1614948ADC0030D63F = {
+			isa = PBXGroup;
+			children = (
+				CEFDFE2614948AE50030D63F /* sqliteFTS */,
+				CEFDFE2314948AE50030D63F /* Frameworks */,
+				CEFDFE2214948AE50030D63F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEFDFE2214948AE50030D63F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEFDFE2114948AE50030D63F /* libsqliteFTS.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEFDFE2314948AE50030D63F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEFDFE2414948AE50030D63F /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEFDFE2614948AE50030D63F /* sqliteFTS */ = {
+			isa = PBXGroup;
+			children = (
+				CEFDFE2914948AE50030D63F /* sqliteFTS.h */,
+				CEFDFE2A14948AE60030D63F /* sqliteFTS.m */,
+				CEFDFE2714948AE50030D63F /* Supporting Files */,
+			);
+			path = sqliteFTS;
+			sourceTree = "<group>";
+		};
+		CEFDFE2714948AE50030D63F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEFDFE2814948AE50030D63F /* sqliteFTS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CEFDFE1F14948AE50030D63F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CEFDFE2014948AE50030D63F /* sqliteFTS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEFDFE2E14948AE60030D63F /* Build configuration list for PBXNativeTarget "sqliteFTS" */;
+			buildPhases = (
+				CEFDFE1D14948AE50030D63F /* Sources */,
+				CEFDFE1E14948AE50030D63F /* Frameworks */,
+				CEFDFE1F14948AE50030D63F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sqliteFTS;
+			productName = sqliteFTS;
+			productReference = CEFDFE2114948AE50030D63F /* libsqliteFTS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEFDFE1814948ADC0030D63F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = CEFDFE1B14948ADC0030D63F /* Build configuration list for PBXProject "sqliteFTS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEFDFE1614948ADC0030D63F;
+			productRefGroup = CEFDFE2214948AE50030D63F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEFDFE2014948AE50030D63F /* sqliteFTS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEFDFE1D14948AE50030D63F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFDFE2B14948AE60030D63F /* sqliteFTS.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CEFDFE2C14948AE60030D63F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CEFDFE2D14948AE60030D63F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEFDFE2F14948AE60030D63F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/sqliteFTS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sqliteFTS/sqliteFTS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CEFDFE3014948AE60030D63F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/sqliteFTS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "sqliteFTS/sqliteFTS-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEFDFE1B14948ADC0030D63F /* Build configuration list for PBXProject "sqliteFTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFDFE2C14948AE60030D63F /* Debug */,
+				CEFDFE2D14948AE60030D63F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEFDFE2E14948AE60030D63F /* Build configuration list for PBXNativeTarget "sqliteFTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEFDFE2F14948AE60030D63F /* Debug */,
+				CEFDFE3014948AE60030D63F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEFDFE1814948ADC0030D63F /* Project object */;
+}
