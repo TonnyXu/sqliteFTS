@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CEF4E29914949BC00099F97E /* sqlite3.c in Sources */ = {isa = PBXBuildFile; fileRef = CEF4E29714949BC00099F97E /* sqlite3.c */; };
+		CEF4E29A14949BC00099F97E /* sqlite3.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF4E29814949BC00099F97E /* sqlite3.h */; };
 		CEFDFE2514948AE50030D63F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFDFE2414948AE50030D63F /* Foundation.framework */; };
-		CEFDFE2B14948AE60030D63F /* sqliteFTS.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFDFE2A14948AE60030D63F /* sqliteFTS.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CEF4E29714949BC00099F97E /* sqlite3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; lineEnding = 0; path = sqlite3.c; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.c; };
+		CEF4E29814949BC00099F97E /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
 		CEFDFE2114948AE50030D63F /* libsqliteFTS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libsqliteFTS.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEFDFE2414948AE50030D63F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CEFDFE2814948AE50030D63F /* sqliteFTS-Prefix.pch */ = {isa = PBXFileReference; path = "sqliteFTS-Prefix.pch"; sourceTree = "<group>"; };
-		CEFDFE2914948AE50030D63F /* sqliteFTS.h */ = {isa = PBXFileReference; path = sqliteFTS.h; sourceTree = "<group>"; };
-		CEFDFE2A14948AE60030D63F /* sqliteFTS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sqliteFTS.m; sourceTree = "<group>"; };
+		CEFDFE2814948AE50030D63F /* sqliteFTS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "sqliteFTS-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,8 +60,8 @@
 		CEFDFE2614948AE50030D63F /* sqliteFTS */ = {
 			isa = PBXGroup;
 			children = (
-				CEFDFE2914948AE50030D63F /* sqliteFTS.h */,
-				CEFDFE2A14948AE60030D63F /* sqliteFTS.m */,
+				CEF4E29714949BC00099F97E /* sqlite3.c */,
+				CEF4E29814949BC00099F97E /* sqlite3.h */,
 				CEFDFE2714948AE50030D63F /* Supporting Files */,
 			);
 			path = sqliteFTS;
@@ -81,6 +82,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEF4E29A14949BC00099F97E /* sqlite3.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEFDFE2B14948AE60030D63F /* sqliteFTS.m in Sources */,
+				CEF4E29914949BC00099F97E /* sqlite3.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,8 +154,9 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
+					SQLITE_DEBUG,
+					SQLITE_ENABLE_FTS3_PARENTHESIS,
+					SQLITE_ENABLE_FTS3,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -173,6 +176,10 @@
 				CLANG_ENABLE_OBJC_ARC = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SQLITE_ENABLE_FTS3_PARENTHESIS,
+					SQLITE_ENABLE_FTS3,
+				);
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -226,6 +233,7 @@
 				CEFDFE3014948AE60030D63F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
